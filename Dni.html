@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNI</title>
+    <script src="funciondni.js"></script>
+    <link rel="stylesheet" href="estilodni.css">
+
+</head>
+<body>
+
+    <div class="principal">
+        <nav class="nav">
+            <form action="dni.html" method="get" name="registro" onsubmit="return funcion(this)">
+                <br>
+                <br>
+                <center><h1>DNI</h1></center>
+                <label for="">INGRESA TU DNI</label>
+                <br>
+                <input type="text" name="dni" id="dni" class="entradas">
+                <br>
+                <br>
+                <label for="">INGRESA TU LETRA DE DNI</label>
+                <br>
+                <input type="text" name="letra" id="letra" class="entradas" oninput="this.value = this.value.toUpperCase()">
+                <br>
+                <br>
+                <input class="btn" type="submit" id="enviar" value="Enviar">
+                <input class="btn" type="reset" id="reset" value="Borrar">
+                <br>
+                <br>
+                <br>
+            </form>
+        </nav>
+        
+    </div>
+    
+    
+
+
+</body>
+</html>
