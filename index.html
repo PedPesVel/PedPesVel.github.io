@@ -3,48 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="validar.js"></script>
-    <link rel="stylesheet" href="estilo.css" type="text/css" media="screen">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menustyle.css">
 </head>
 <body>
-
-    <div class="principal">
-
-        <form  method="get" name="registro" onsubmit="return validar(this)"  action="index.html">
-
-            <label>Nombre:</label>
-            <input class="cajas" type="text" name="nombre" id="nombre"/>
-            <br>
-            <br>
-            <label>Edad:</label>
-            <input class="cajas" type="text" name="edad" id="edad"/>
-            <br>
-            <br>
-            <legend>Selecciona sexo:</legend>
-            <blockquote>
-                <label>Femenino</label>
-                <input class="cajas" type="radio" name="sexo" id="femenino"/>
-                <label>Masculino</label>
-                <input class="cajas" type="radio" name="sexo" id="masculino"/>
-            </blockquote>
-
-            <label>
-                <span>Deporte Favorito</span>
-                <select id="deporte" name="deporte">
-                    <option value="ninguno">Ninguno</option>
-                    <option value="futbol">Futbol</option>
-                    <option value="basquetbol">Basquetbol</option>
-                    <option value="beisbol">Beisbol</option>
-                    <option value="tenis">Tenis</option>
-                </select>
-            </label>
-            
-            <input class="boton" type="submit" id="enviar" value="Enviar">
-            <input class="boton" type="submit" id="reset" value="Reset">
-        </form>
-
-    </div>
     
+    <div class="container">
+        <nav>
+            <a href="a.html">Primer formulario</a>
+        </nav>  
+    <br>
+    <br>
+        <nav class="">
+            <a href="a.html">DNI</a>
+        </nav>
+    
+    <br>
+    <br>
+        <nav class="">
+            <a href="a.html">Ejercicios JS</a>
+        </nav>
+    </div>
+
+    
+
 </body>
 </html>
