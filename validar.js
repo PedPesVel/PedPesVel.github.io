@@ -30,6 +30,7 @@ function validar(form){
     }
     
     // Si todo es válido
+    alert("Registro exitoso")
     return true;
     
     }
