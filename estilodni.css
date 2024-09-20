@@ -55,3 +55,14 @@ h1{
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  color: aliceblue;
 }
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
