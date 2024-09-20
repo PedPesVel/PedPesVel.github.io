@@ -20,7 +20,7 @@ label{
     width: 50%;
     display: block;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 10%;
     border-radius: 50px;
 }
 
@@ -30,7 +30,7 @@ form{
 }
 
 .entradas{
-    width: 70%;
+    width: 60%;
     height: 15px;
     background: #bcb6b6 ;
     padding: 8px;
