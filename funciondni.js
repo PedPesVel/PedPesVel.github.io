@@ -1,4 +1,4 @@
-function funcion(form){
+function funciondni(form){
 
     var dni = document.getElementById('dni').value
     var letra = document.getElementById('letra').value
