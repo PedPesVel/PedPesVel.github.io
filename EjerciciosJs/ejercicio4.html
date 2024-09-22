@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+    <script src="validarej4.js"></script>
+    <link rel="stylesheet" href="estilocuatro.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <form action="ejercicio4.html" method="get" name="calif" onsubmit="return funcioncali(this)">
+        <h2>Conoce tu calificación final de Algoritmia</h2>
+        <h3>Ingresa las calificaciones de tus parciales</h3>
+
+        <input type="text" id="calipar1" name="calipar1" class="parciales" value="Parcial 1" onclick="Parcial1()">
+        <input type="text" id="calipar2" name="calipar2" class="parciales" value="Parcial 2" onclick="Parcial2()">
+        <input type="text" id="calipar3" name="calipar3" class="parciales" value="Parcial 3" onclick="Parcial3()">
+        
+
+
+        
+        <h3>Ingresa la calificación de tu examen final</h3>
+        <input type="text" id="caliexam" name="caliexam" class="entradas">
+        <h3>Ingresa la calificación de tu trabajo final</h3>
+        <input type="text" id="calitrabajo" name="calitrabajo" class="entradas">
+        <br>
+        <br>
+        <input type="submit" value="Calcular" class="btn">
+        <h3>Esta es tu califición final de la materia de Algoritmia</h3>
+        <input type="text" id="califinal" name="califinal" class="entradas" readonly>
+        <br>
+        <br>
+        <input type="button" value="Limpiar" onclick="Limpiar()" class="btn">
+
+    </form>
+
+    </div>
+
+    <nav class="nav">
+        <a href="menuejrjs.html">Regresar</a>
+    </nav>
+    
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento</title>
+    <script src="validarej3.js"></script>
+    <link rel="stylesheet" href="styletres.css">
+</head>
+<body>
+    <br>
+    <br>
+    <div class="container">
+
+        <form action="ejercicio3.html" method="get" name="descuento" onsubmit="return funciondes(this)">
+            <h2>Calcula tu Descuento</h2>
+            <h3>¡Ingresa el valor del producto para saber tu descuento!</h3>
+            <input type="text" name="inicial" id="inicial" class="entradas">
+            <br>
+            <br>
+            <input type="submit" value="Calcular" class="btn">
+            <h3>Usted ahorró</h3>
+            <input type="text" name="ahorro" id="ahorro" class="entradas" readonly>
+            <h3>Usted pagará</h3>
+            <input type="text" name="descuento" id="descuento" class="entradas" readonly>
+            <br>
+            <br>
+            <input type="button" value="Limpiar" onclick="btn()" class="btn">
+
+        </form>
+
+    </div>
+
+    <nav class="nav">
+        <a href="menuejrjs.html">Regresar</a>
+    </nav>
+
+</body>
+</html>

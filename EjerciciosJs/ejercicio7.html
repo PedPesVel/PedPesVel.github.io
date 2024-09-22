@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas extra</title>
+    <script src="validarej7.js"></script>
+    <link rel="stylesheet" href="stylesiete.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="ejercicio7.html" method="get" name="salario" onsubmit="return validarSalario()">
+            <h3>Ingrese el sueldo que recibe por hora</h3>
+            <input type="text" id="sueldo" name="sueldo" class="entradas">
+            <h3>Ingrese el numero de horas extras trabajadas en esta semana</h3>
+            <input type="text" id="extras" name="extras" class="entradas">
+            <br>
+            <br>
+            <input type="submit" value="Calcular" class="btn">
+            <h3>En su próximo pago semanal usted cobrará: </h3>
+            <input type="text" id="total" name="total" class="entradas" readonly>
+            <br>
+            <br>
+            <input type="button" value="Limpiar" onclick="Limpiar()" class="btn">
+        </form>
+
+    </div>
+
+    <nav class="nav">
+        <a href="menuejrjs.html">Regresar</a>
+    </nav>
+    
+</body>
+</html>

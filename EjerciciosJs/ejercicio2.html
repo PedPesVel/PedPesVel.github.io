@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisión</title>
+    <script src="validarej2.js"></script>
+    <link rel="stylesheet" href="styledos.css">
+</head>
+<body>
+    <br>
+    <br>
+    <div class="container">
+
+        <form action="ejercicio2.html" method="get" name="comision" onsubmit="return funcioncap(this)">
+            <h2>Calcula tu sueldo más tus comisiones por venta</h2>
+            <h3>Ingresa tu sueldo base</h3>
+            <input type="text" name="sueldo" id="sueldo" class="entradas">
+            <br>
+            <br>
+            <input type="submit" value="Calcular" class="btn">
+            <h3>Este es el total que recibirás tras 3 ventas</h3>
+            <input type="text" name="total" id="total" class="entradas" readonly>
+            <br>
+            <br>
+            <input type="button" value="Limpiar" onclick="btn()" class="btn">
+
+        </form>
+
+    </div>
+
+    <nav class="nav">
+        <a href="menuejrjs.html">Regresar</a>
+    </nav>
+
+
+</body>
+</html>
