@@ -27,6 +27,6 @@ function funcioncap(form){
 
 function btn(){
 
-    document.forms["capital"].reset();
+    document.forms["comision"].reset();
 
 }
