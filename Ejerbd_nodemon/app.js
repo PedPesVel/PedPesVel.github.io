@@ -5,7 +5,7 @@ var app=express()
 var con=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'*****',
+    password:'29050923NP+m',
     database:'5IV8'
 })
 con.connect();
@@ -39,7 +39,7 @@ app.get('/obtenerUsuario',(req,res)=>{
         var i = 0;
         respuesta.forEach(user => {
             i++;
-            userHTML += `<tr><td>${i}</td><td>${user.nombre}</td></tr>`;
+            userHTML += `<tr><td>${user.id_usuario}</td><td>${user.nombre}</td></tr>`;
         });
 
         return res.send(`<table>
@@ -52,6 +52,26 @@ app.get('/obtenerUsuario',(req,res)=>{
         );
 
     });
+});
+
+app.post('/borrarUsuario', (req, res) => {
+    const id = req.body.id; // El ID del usuario a eliminar viene en el cuerpo de la solicitud
+    console.log("hola")
+    con.query('DELETE FROM usuario WHERE id_usuario = ?', [id], (err, resultado, fields) => {
+
+        if (err) {
+            console.error('Error al borrar el usuario:', err);
+            return res.status(500).send("Error al borrar el usuario");
+        }
+        if (resultado.affectedRows === 0) {
+            return res.status(404).send("Usuario no encontrado");
+        }
+        return res.send(`Usuario con ID ${id} borrado correctamente`);
+    });
+});
+
+app.post('/actualizarUsuario', (req, res) => {
+    const id = req.body.id;
 });
 
 app.listen(3001,()=>{
